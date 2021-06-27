@@ -1,26 +1,26 @@
 const figuras = 
                 [
-                    "ACKBAR","APERTURE-BLANK","APERTURE","ARMADILLO","ATAT","ATOM","AWESOME-FACE","BANANA","BEARFACE","BEAVIS.ZEN","BEES","BILL-THE-CAT","BIOHAZARD",
-                    "BISHOP","BLACK-MESA","BONG","BOX","BROKEN-HEART","BUD-FROGS","BUNNY","C3PO","CAKE-WITH-CANDLES","CAKE","CAT","CAT2","CATFENCE","CHARIZARDVICE",
-                    "CHARLIE","CHEESE","CHESSMEN","CHITO","CLAW-ARM","CLIPPY","COMPANION-CUBE","COWER","COWFEE","CTHULHU-MINI","CUBE","DAEMON","DALEK-SHOOTING","DALEK",
-                    "DEFAULT","DOCKER-WHALE","DOGE","DOLPHIN","DRAGON-AND-COW","DRAGON","EBI_FURAI","ELEPHANT-IN-SNAKE","ELEPHANT","ELEPHANT2","EXPLOSION","EYES",
-                    "FAT-BANANA","FAT-COW","FENCE","FIRE","FLAMING-SHEEP","FOX","GHOST","GHOSTBUSTERS","GLADOS","GOAT","GOAT2","GOLDEN-EAGLE","HAND","HAPPY-WHALE",
-                    "HEDGEHOG","HELLOKITTY","HIPPIE","HIYA","HIYOKO","HOMER","HYPNO","IBM","IWASHI","JELLYFISH","KARL_MARX","KILROY","KING","KISS","KITTEN","KITTY",
-                    "KNIGHT","KOALA","KOSH","LAMB","LAMB2","LIGHTBULB","LOBSTER","LOLLERSKATES","LUKE-KOALA","MAILCHIMP","MAZE-RUNNER","MECH-AND-COW","MEOW","MILK",
-                    "MINOTAUR","MONA-LISA","MOOFASA","MOOGHIDJIRAH","MOOJIRA","MOOSE","MULE","MUTILATED","NYAN","OCTOPUS","OKAZU","OWL","PAWN","PERIODIC-TABLE",
-                    "PERSONALITY-SPHERE","PINBALL-MACHINE","PSYCHIATRICHELP","PSYCHIATRICHELP2","PTERODACTYL","QUEEN","R2-D2","RADIO","REN","RENGE","ROBOT",
-                    "ROBOTFINDSKITTEN","ROFLCOPTER","ROOK","SACHIKO","SATANIC","SEAHORSE-BIG","SEAHORSE","SHEEP","SHIKATO","SHRUG","SKELETON","SMALL","SMILING-OCTOPUS",
-                    "SNOOPY","SNOOPYHOUSE","SNOOPYSLEEP","SPIDERCOW","SQUID","SQUIRREL","STEGOSAURUS","STIMPY","SUDOWOODO","SUPERMILKER","SURGERY","TABLEFLIP","TAXI",
-                    "TELEBEARS","TEMPLATE","THREADER","THREECUBES","TOASTER","TORTOISE","TURKEY","TURTLE","TUX-BIG","TUX","TWEETY-BIRD","USA","VADER-KOALA","VADER",
-                    "WEEPING-ANGEL","WHALE","WIZARD","WOOD","WORLD","WWW","YASUNA_01","YASUNA_02","YASUNA_03","YASUNA_03A","YASUNA_04","YASUNA_05","YASUNA_06",
-                    "YASUNA_07","YASUNA_08","YASUNA_09","YASUNA_10","YASUNA_11","YASUNA_12","YASUNA_13","YASUNA_14","YASUNA_16","YASUNA_17","YASUNA_18","YASUNA_19",
-                    "YASUNA_20","YMD_UDON","ZEN-NOH-MILK"
+                    "ackbar","aperture-blank","aperture","armadillo","atat","atom","awesome-face","banana","bearface","beavis.zen","bees","bill-the-cat","biohazard",
+                    "bishop","black-mesa","bong","box","broken-heart","bud-frogs","bunny","C3PO","cake-with-candles","cake","cat","cat2","catfence","charizardvice",
+                    "charlie","cheese","chessmen","chito","claw-arm","clippy","companion-cube","cower","cowfee","cthulhu-mini","cube","daemon","dalek-shooting","dalek",
+                    "default","docker-whale","doge","dolphin","dragon-and-cow","dragon","ebi_furai","elephant-in-snake","elephant","elephant2","explosion","eyes",
+                    "fat-banana","fat-cow","fence","fire","flaming-sheep","fox","ghost","ghostbusters","glados","goat","goat2","golden-eagle","hand","happy-whale",
+                    "hedgehog","hellokitty","hippie","hiya","hiyoko","homer","hypno","ibm","iwashi","jellyfish","karl_marx","kilroy","king","kiss","kitten","kitty",
+                    "knight","koala","kosh","lamb","lamb2","lightbulb","lobster","lollerskates","luke-koala","mailchimp","maze-runner","mech-and-cow","meow","milk",
+                    "minotaur","mona-lisa","moofasa","mooghidjirah","moojira","moose","mule","mutilated","nyan","octopus","okazu","owl","pawn","periodic-table",
+                    "personality-sphere","pinball-machine","psychiatrichelp","psychiatrichelp2","pterodactyl","queen","R2-D2","radio","ren","renge","robot",
+                    "robotfindskitten","roflcopter","rook","sachiko","satanic","seahorse-big","seahorse","sheep","shikato","shrug","skeleton","small","smiling-octopus",
+                    "snoopy","snoopyhouse","snoopysleep","spidercow","squid","squirrel","stegosaurus","stimpy","sudowoodo","supermilker","surgery","tableflip","taxi",
+                    "telebears","template","threader","threecubes","toaster","tortoise","turkey","turtle","tux-big","tux","tweety-bird","USA","vader-koala","vader",
+                    "weeping-angel","whale","wizard","wood","world","www","yasuna_01","yasuna_02","yasuna_03","yasuna_03a","yasuna_04","yasuna_05","yasuna_06",
+                    "yasuna_07","yasuna_08","yasuna_09","yasuna_10","yasuna_11","yasuna_12","yasuna_13","yasuna_14","yasuna_16","yasuna_17","yasuna_18","yasuna_19",
+                    "yasuna_20","ymd_udon","zen-noh-milk"
                 ];
 
 cmbFiguras = document.getElementById("Figura");
 for( i = 0; i < figuras.length; i++ ){
     opcion = document.createElement("option");
-    opcion.value = figuras[i].toLowerCase();
-    opcion.text = figuras[i];
+    opcion.value = figuras[i];
+    opcion.text = figuras[i].toUpperCase();
     cmbFiguras.appendChild(opcion);
 }
