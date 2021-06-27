@@ -17,7 +17,7 @@ const figuras =
 cmbFiguras = document.getElementById("Figura");
 for( i = 0; i < figuras.length; i++ ){
     opcion = document.createElement("option");
-    opcion.value = figuras[i];
+    opcion.value = figuras[i].toLowerCase();
     opcion.text = figuras[i];
     cmbFiguras.appendChild(opcion);
 }
